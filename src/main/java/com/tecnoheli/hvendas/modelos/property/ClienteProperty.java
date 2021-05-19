@@ -15,4 +15,9 @@ public class ClienteProperty {
 
     private List<VendaProperty> compras;
 
+    public ClienteProperty(String id, String nome, String telefone) {
+        this.id = id;
+        this.nome = nome;
+        this.telefone = telefone;
+    }
 }

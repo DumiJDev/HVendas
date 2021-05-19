@@ -1,10 +1,10 @@
 
-.fundo-preto {
-    -fx-background-color:#2b2b3c;
+.fundo1 {
+    -fx-background-color: #393351;
 }
 
-.fundo-claro {
-    -fx-background-color: #fafafa
+.fundo2 {
+    -fx-background-color: #342543;
 }
 
 .cor-principal {
@@ -51,9 +51,16 @@
 }
 
 .bt-sucesso {
-    -fx-background-color: #33ff33;
-    -fx-border-color: #ffffff;
-    -fx-border-radius: 5px
+    -fx-background-radius: 15px;
+    -fx-text-fill: #1dbf2d;
+    -fx-border-color: #1dbf2d;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px
+}
+
+.bt-sucesso:hover {
+    -fx-background-color: #1dbf2d;
+    -fx-text-fill: #ffffff;
 }
 
 .bt-info {
@@ -83,28 +90,32 @@
         -fx-border-radius: 15px
 }
 
-.bt:hover, .bt:hover .pane .img, .bt-secundario:hover,
-    .bt-alerta:hover, .bt-erro:hover, .bt-info:hover,  .bt-sucesso:hover {
+.bt:hover, .bt-secundario:hover,
+    .bt-alerta:hover, .bt-erro:hover, .bt-info:hover {
     -fx-scale-z: 1.05;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
 }
 
-.bt-compra-menu, .bt-venda-menu, .bt-fornecedor-menu,
-    .bt-estoque-menu, .bt-funcionario-menu, .bt-cliente-menu {
-    -fx-border-color: #ffffff;
-    //-fx-border-width: 2px;
-    -fx-border-radius: 5px;
-    -fx-background-radius: 10px;
+.bt-menu {
+-fx-background-color : #393351;
+-fx-background-radius :  0;
+-text-fill: #fff;
 }
 
-.borda-branca:hover {
-    -fx-border-color: #ffffff;
-    -fx-border-width: 1px;
+.bt-menu:hover {
+-fx-background-color : #524A7B ;
+-fx-border-width: 0 0 0 2;
+-fx-border-color: #fafafa;
+}
+
+.bt-menu:pressed {
+-fx-background-color :  #342543 ;
+-fx-background-radius :  30 0 0 30;
 }
 
 .menu-bar {
-    -fx-background-color:#2b2b3c;
+    -fx-background-color:#393351;
 }
 
 .menu .label {
@@ -120,7 +131,7 @@
 }
 
 .menu-item {
-    -fx-background-color: #2b2b3c;
+    -fx-background-color: #393351;
 }
 
 .menu-item .label {
@@ -133,4 +144,55 @@
 
 .menu-item:hover .label {
     -fx-text-fill: #000000;
+}
+
+.radio {
+    -jfx-selected-color: #0e73e5;
+}
+
+.texto-claro {
+    -fx-text-fill: #fff;
+}
+
+.texto-escuro {
+    -fx-text-fill: #393351;
+}
+
+.bt-eliminar {
+        -fx-background-radius: 15px;
+        -fx-text-fill: #fff;
+        -fx-border-color: #fff;
+        -fx-border-width: 2px;
+        -fx-border-radius: 15px
+}
+
+.bt-eliminar:hover {
+    -fx-background-color: red;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: red;
+    -fx-border-radius: 15px
+}
+
+.rb-modo:selected {
+    -fx-text-fill: #342543;
+}
+
+.item {
+
+}
+
+.item .button:pressed {
+
+}
+
+.item:hover {
+
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent
+}
+
+.scroll-pane {
+    -fx-background-color: transparent
 }

@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.DetalhesClienteControlador">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="768.0" styleClass="fundo-preto" stylesheets="@../assets/css/global-escuro.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.tecnoheli.hvendas.controladores.DetalhesClienteControlador">
+   <children>
+      <Separator layoutX="20.0" layoutY="50.0" prefHeight="12.0" prefWidth="679.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="lbNomeCliente" alignment="BOTTOM_CENTER" layoutX="364.0" layoutY="22.0" prefHeight="28.0" prefWidth="728.0" text="Nome Cliente" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="378.0" layoutY="56.0" orientation="VERTICAL" prefHeight="434.0" prefWidth="13.0" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="377.0" AnchorPane.topAnchor="56.0" />
+      <AnchorPane layoutX="20.0" layoutY="56.0" prefHeight="434.0" prefWidth="362.0" snapToPixel="false" styleClass="cor-principal" stylesheets="@../assets/css/global-escuro.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="386.0" AnchorPane.topAnchor="57.0">
+         <children>
+            <Label layoutX="76.0" layoutY="27.0" prefHeight="28.0" prefWidth="211.0" text="Nome" textFill="WHITE" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="27.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="84.0" prefHeight="28.0" prefWidth="211.0" text="Telefone" textFill="WHITE" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="84.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="138.0" prefHeight="28.0" prefWidth="211.0" text="Número de compras feitas" textFill="WHITE" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="138.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="99.0" layoutY="390.0" prefHeight="36.0" prefWidth="164.0" styleClass="bt-eliminar" stylesheets="@../assets/css/global-escuro.css" text="Eliminar" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="99.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="tfNome" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="412.0" layoutY="84.0" prefHeight="25.0" prefWidth="331.0" promptText="Nome" styleClass="texto-claro" stylesheets="@../assets/css/global-escuro.css" unFocusColor="WHITE" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="83.0" />
+      <JFXTextField fx:id="tfTelefone" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="412.0" layoutY="142.0" prefHeight="25.0" prefWidth="331.0" promptText="Telefone" styleClass="texto-claro" stylesheets="@../assets/css/global-escuro.css" unFocusColor="WHITE" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="140.0" />
+      <JFXTextField fx:id="tfComprasFeitas" disable="true" editable="false" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="412.0" layoutY="203.0" prefHeight="25.0" prefWidth="331.0" promptText="Compras feitas" styleClass="texto-claro" stylesheets="@../assets/css/global-escuro.css" unFocusColor="WHITE" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="195.0" />
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="488.0" layoutY="448.0" prefHeight="36.0" prefWidth="164.0" styleClass="bt-login" stylesheets="@../assets/css/global-escuro.css" text="Editar dados" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="116.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
 </AnchorPane>

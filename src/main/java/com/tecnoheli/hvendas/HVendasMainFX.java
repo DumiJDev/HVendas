@@ -40,7 +40,7 @@ public class HVendasMainFX extends Application {
     @Override
     public void start(Stage estudio) throws Exception {
         //Carregando e importando o fxml
-        final Parent parent = FXMLLoader.load(getClass().getResource("/fxml/telaPrincipal.fxml"));
+        final Parent parent = FXMLLoader.load(getClass().getResource("/fxml/telaPrincipal2.fxml"));
 
         //Adicionando o parent ao cenario
         final Scene cenario = new Scene(parent);

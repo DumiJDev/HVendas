@@ -2,48 +2,85 @@
   <dictionary name="Dumilde Paulo">
     <words>
       <w>abrir</w>
+      <w>adiciona</w>
       <w>adicionando</w>
       <w>alterar</w>
+      <w>altura</w>
+      <w>apagar</w>
+      <w>ativa</w>
       <w>ativo</w>
+      <w>atualiza</w>
       <w>aumenta</w>
+      <w>barra</w>
+      <w>botao</w>
+      <w>cadastrar</w>
       <w>cadastro</w>
       <w>caixa</w>
+      <w>caminho</w>
       <w>carrega</w>
       <w>carregando</w>
       <w>carrinho</w>
       <w>cenario</w>
+      <w>claro</w>
       <w>cliente</w>
       <w>clientes</w>
       <w>codigo</w>
+      <w>componente</w>
       <w>compra</w>
+      <w>comprar</w>
       <w>compras</w>
+      <w>conteiner</w>
+      <w>conteudo</w>
       <w>controlador</w>
       <w>controladores</w>
       <w>definindo</w>
+      <w>deleta</w>
+      <w>detalhes</w>
+      <w>digite</w>
       <w>diminui</w>
+      <w>eliminar</w>
+      <w>escolha</w>
+      <w>escolhido</w>
+      <w>escuro</w>
+      <w>espaco</w>
       <w>esqueceu</w>
+      <w>estado</w>
+      <w>estilo</w>
       <w>estoque</w>
       <w>estudio</w>
       <w>excluir</w>
       <w>feminino</w>
       <w>ffffff</w>
       <w>fornecedor</w>
+      <w>fornecedores</w>
       <w>funcao</w>
       <w>funcionario</w>
+      <w>funcionarios</w>
+      <w>fundo</w>
       <w>gerente</w>
       <w>gestão</w>
       <w>hvendas</w>
       <w>hvidao</w>
       <w>imagens</w>
       <w>importando</w>
+      <w>indice</w>
+      <w>inicial</w>
       <w>inserir</w>
+      <w>itens</w>
+      <w>largura</w>
+      <w>lista</w>
       <w>listar</w>
       <w>manter</w>
       <w>masculino</w>
+      <w>minhas</w>
+      <w>modo</w>
+      <w>muda</w>
       <w>nascimento</w>
       <w>novo</w>
       <w>numero</w>
+      <w>opcao</w>
       <w>palavra</w>
+      <w>pesquisa</w>
       <w>preco</w>
       <w>produto</w>
       <w>produtos</w>
@@ -51,19 +88,25 @@
       <w>recuperar</w>
       <w>residencia</w>
       <w>residência</w>
+      <w>resultado</w>
       <w>salario</w>
       <w>sexo</w>
       <w>sistema</w>
+      <w>sucesso</w>
       <w>tamanho</w>
       <w>tecnoheli</w>
       <w>tela</w>
+      <w>telas</w>
       <w>telefone</w>
       <w>tema</w>
       <w>tipo</w>
+      <w>titulo</w>
       <w>título</w>
       <w>usuario</w>
+      <w>variáveis</w>
       <w>venda</w>
       <w>vendas</w>
+      <w>vender</w>
     </words>
   </dictionary>
 </component>

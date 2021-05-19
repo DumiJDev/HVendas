@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.ListaClienteControlador">
-    
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="750.0" stylesheets="@../assets/css/global-escuro.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.ListaClienteControlador">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="50.0" prefWidth="730.0" style="-fx-border-width: 2px; -fx-border-color: #0e73e5; -fx-border-radius: 5px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXTextField fx:id="tfPesquisa" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="503.0" layoutY="18.0" prefHeight="17.0" prefWidth="206.0" promptText="Digite o nome" style="-fx-border-width: 0 0 2 0;" styleClass="texto-claro" stylesheets="@../assets/css/global-escuro.css" unFocusColor="#aeaaaa" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="18.0" />
+            <JFXRadioButton fx:id="rbTelefone" focusTraversable="false" layoutX="378.0" layoutY="19.0" styleClass="radio" stylesheets="@../assets/css/global-escuro.css" text="Telefone" textFill="#0e73e5" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="OpcaoPesquisa" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rbNome" focusTraversable="false" layoutX="288.0" layoutY="17.0" selected="true" styleClass="radio" stylesheets="@../assets/css/global-escuro.css" text="Nome" textFill="#0e73e5" toggleGroup="$OpcaoPesquisa" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXRadioButton>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="11.0" prefHeight="32.0" prefWidth="244.0" text="Lista de clientes" textFill="#0e73e5" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="461.0" AnchorPane.topAnchor="9.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="275.0" layoutY="157.0" pannable="true" prefHeight="200.0" prefWidth="200.0" stylesheets="@../assets/css/global-escuro.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <content>
+            <AnchorPane fx:id="apContainer" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+         </content>
+      </ScrollPane>
+   </children>
 </AnchorPane>

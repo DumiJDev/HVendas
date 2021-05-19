@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="650.0" styleClass="fundo-preto" stylesheets="@../assets/css/global.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.LoginUsuarioControlador">
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="650.0" styleClass="fundo-preto" stylesheets="@../assets/css/global-escuro.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.LoginUsuarioControlador">
    <children>
       <JFXTextField fx:id="tfLoginUsuario" focusColor="#0e73e5" labelFloat="true" layoutX="204.0" layoutY="186.0" prefHeight="25.0" prefWidth="242.0" promptText="Login" unFocusColor="WHITE" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="204.0" />
       <JFXCheckBox fx:id="cbManterAtivo" checkedColor="#0e73e5" layoutX="204.0" layoutY="301.0" prefHeight="25.0" prefWidth="96.0" selected="true" text="Lembra-me" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="350.0" />
-      <JFXButton fx:id="btLogin" buttonType="RAISED" layoutX="326.0" layoutY="297.0" prefHeight="34.0" prefWidth="123.0" styleClass="bt-login" stylesheets="@../assets/css/global.css" text="Entrar" textFill="#0e73e5" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="326.0" AnchorPane.rightAnchor="201.0">
+      <JFXButton fx:id="btLogin" buttonType="RAISED" layoutX="326.0" layoutY="297.0" prefHeight="34.0" prefWidth="123.0" styleClass="bt-login" stylesheets="@../assets/css/global-escuro.css" text="Entrar" textFill="#0e73e5" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="326.0" AnchorPane.rightAnchor="201.0">
          <opaqueInsets>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </opaqueInsets>
