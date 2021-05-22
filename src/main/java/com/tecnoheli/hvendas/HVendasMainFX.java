@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 
 public class HVendasMainFX extends Application {
@@ -50,6 +51,11 @@ public class HVendasMainFX extends Application {
 
         //Definindo o título
         estudio.setTitle("HVendas: Sistema de gestão de compras e vendas");
+
+        //estudio.setFullScreen(true);
+        estudio.setFullScreenExitHint("Para sair aperte Esc");
+        estudio.setFullScreenExitKeyCombination(KeyCombination.valueOf("Esc"));
+        estudio.setResizable(false);
         setHVendasStage(estudio);
         estudio.show();
 

@@ -73,7 +73,6 @@ public class TelaPrincipalControlador implements Initializable {
     //Minhas Variáveis
     private ObservableList<JFXButton> bts;
     private ObservableMap<JFXButton, Parent> botaoTelas;
-    private FXMLLoader loader;
     private JFXButton btEscolhido;
 
     @FXML
@@ -92,7 +91,7 @@ public class TelaPrincipalControlador implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
-        loader = new FXMLLoader();
+        FXMLLoader loader = new FXMLLoader();
 
         bts = FXCollections.observableArrayList(
                 btClientes, btComprar, btEstoque,
@@ -108,48 +107,15 @@ public class TelaPrincipalControlador implements Initializable {
             botaoTelas.put(bts.get(indice), loader.lista(indice + 1));
         }
 
-        rbModo.setOnAction(event -> {
-            boolean estado = rbModo.isSelected();
-            String estilo = estado ? "/assets/css/global-claro.css" : "/assets/css/global-escuro.css";
-
-            apBarraMenu.getStylesheets().removeIf(s -> !"".equals(s));
-            apModo.getStylesheets().removeIf(s -> !"".equals(s));
-            vbContainerMenu.getStylesheets().removeIf(s -> !"".equals(s));
-            btClientes.getStylesheets().removeIf(s -> !"".equals(s));
-            btComprar.getStylesheets().removeIf(s -> !"".equals(s));
-            btEstoque.getStylesheets().removeIf(s -> !"".equals(s));
-            btFornecedores.getStylesheets().removeIf(s -> !"".equals(s));
-            btFuncionarios.getStylesheets().removeIf(s -> !"".equals(s));
-            btVender.getStylesheets().removeIf(s -> !"".equals(s));
-            pTituloMenu.getStylesheets().removeIf(s -> !"".equals(s));
-            lbNomeFuncionario.getStylesheets().removeIf(s -> !"".equals(s));
-            apConteiner.getStylesheets().removeIf(s -> !"".equals(s));
-            rbModo.getStylesheets().removeIf(s -> !"".equals(s));
-
-            apBarraMenu.getStylesheets().add(estilo);
-            apModo.getStylesheets().add(estilo);
-            vbContainerMenu.getStylesheets().add(estilo);
-            btClientes.getStylesheets().add(estilo);
-            btComprar.getStylesheets().add(estilo);
-            btEstoque.getStylesheets().add(estilo);
-            btFornecedores.getStylesheets().add(estilo);
-            btFuncionarios.getStylesheets().add(estilo);
-            btVender.getStylesheets().add(estilo);
-            pTituloMenu.getStylesheets().add(estilo);
-            lbNomeFuncionario.getStylesheets().add(estilo);
-            apConteiner.getStylesheets().add(estilo);
-            rbModo.getStylesheets().add(estilo);
-
-            btAtivo(btEscolhido);
-        });
+        rbModo.setOnAction(event -> trocaModo());
 
     }
 
     private void btAtivo(JFXButton bt) {
         final String estilo = "-fx-background-radius: 0; " +
-                "-fx-background-color :  " + (rbModo.isSelected() ? "#c9c5c5" :"#342543")
+                "-fx-background-color :  " + (rbModo.isSelected() ? "#c9c5c5" : "#342543")
                 + "; -fx-border-width: 0 0 0 5; " +
-                "-fx-border-color: " + (rbModo.isSelected() ? "#000;": "#0e73e5;");
+                "-fx-border-color: " + (rbModo.isSelected() ? "#000;" : "#0e73e5;");
 
         bts.forEach(botao -> botao.setStyle(botao == bt ? estilo : ""));
     }
@@ -166,5 +132,41 @@ public class TelaPrincipalControlador implements Initializable {
     private void ativa(JFXButton bt, Parent tela) {
         btAtivo(bt);
         telaAtiva(tela);
+    }
+
+    private void trocaModo() {
+        final var estado = rbModo.isSelected();
+        final var estilo = estado ? "/assets/css/global-claro.css" : "/assets/css/global-escuro.css";
+        final var estiloGlobal = "/assets/css/global.css";
+
+        apBarraMenu.getStylesheets().clear();
+        apModo.getStylesheets().clear();
+        vbContainerMenu.getStylesheets().clear();
+        btClientes.getStylesheets().clear();
+        btComprar.getStylesheets().clear();
+        btEstoque.getStylesheets().clear();
+        btFornecedores.getStylesheets().clear();
+        btFuncionarios.getStylesheets().clear();
+        btVender.getStylesheets().clear();
+        pTituloMenu.getStylesheets().clear();
+        lbNomeFuncionario.getStylesheets().clear();
+        apConteiner.getStylesheets().clear();
+        rbModo.getStylesheets().clear();
+
+        apBarraMenu.getStylesheets().addAll(estiloGlobal, estilo);
+        apModo.getStylesheets().addAll(estiloGlobal, estilo);
+        vbContainerMenu.getStylesheets().addAll(estiloGlobal, estilo);
+        btClientes.getStylesheets().addAll(estiloGlobal, estilo);
+        btComprar.getStylesheets().addAll(estiloGlobal, estilo);
+        btEstoque.getStylesheets().addAll(estiloGlobal, estilo);
+        btFornecedores.getStylesheets().addAll(estiloGlobal, estilo);
+        btFuncionarios.getStylesheets().addAll(estiloGlobal, estilo);
+        btVender.getStylesheets().addAll(estiloGlobal, estilo);
+        pTituloMenu.getStylesheets().addAll(estiloGlobal, estilo);
+        lbNomeFuncionario.getStylesheets().addAll(estiloGlobal, estilo);
+        apConteiner.getStylesheets().addAll(estiloGlobal, estilo);
+        rbModo.getStylesheets().addAll(estiloGlobal, estilo);
+
+        btAtivo(btEscolhido);
     }
 }

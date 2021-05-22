@@ -1,180 +1,29 @@
 
 .fundo1 {
-    -fx-background-color:#fff;
-}
-
-.fundo2 {
-    -fx-background-color:#c9c5c5;
-}
-
-.cor-principal {
-    -fx-background-color: #0e73e5;
-}
-
-.cor-secundaria {
-    -fx-background-color: #000;
-}
-
-.cor-erro {
-    -fx-background-color: #ed1d0d
-}
-
-.cor-sucesso {
-    -fx-background-color: #33ff33
-}
-
-.cor-info {
-    -fx-background-color: #42ade5
-}
-
-.cor-alerta {
-    -fx-background-color: #ffad00
-}
-
-.bt-principal {
-    -fx-background-color: #0e73e5;
-    -fx-background-radius: 15px;
-    -fx-border-color: #000;
-    -fx-border-radius: 15px
-}
-
-.bt-secundario {
-    -fx-background-color: #000;
-    -fx-border-color: #0e73e5;
-    -fx-border-radius: 5px
-}
-
-.bt-erro {
-    -fx-background-color: #ed1d0d;
-    -fx-border-color: #000;
-    -fx-border-radius: 5px
-}
-
-.bt-sucesso {
-    -fx-background-radius: 15px;
-    -fx-text-fill: #1dbf2d;
-    -fx-border-color: #1dbf2d;
-    -fx-border-width: 2px;
-    -fx-border-radius: 15px
-}
-
-.bt-sucesso:hover {
-    -fx-background-color: #1dbf2d;
-    -fx-text-fill: #000;
-}
-
-.bt-info {
-    -fx-background-color: #42ade5;
-    -fx-border-color: #000;
-    -fx-border-radius: 5px
-}
-
-.bt-alerta {
-    -fx-background-color: #ffad00;
-    -fx-border-color: #000;
-    -fx-border-radius: 5px
-}
-
-.bt-login {
-        -fx-background-radius: 15px;
-        -fx-text-fill: #0e73e5;
-        -fx-border-color: #0e73e5;
-        -fx-border-width: 2px;
-        -fx-border-radius: 15px
-}
-
-.bt-login:hover {
-    -fx-background-color: #0e73e5;
-        -fx-background-radius: 15px;
-        -fx-text-fill: #000;
-        -fx-border-radius: 15px
-}
-
-.bt:hover, .bt-secundario:hover,
-    .bt-alerta:hover, .bt-erro:hover, .bt-info:hover {
-    -fx-scale-z: 1.05;
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-}
-
-.bt-menu {
--fx-background-color : #fff;
--fx-background-radius :  0;
--fx-text-fill: #000;
-}
-
-.bt-menu:hover {
--fx-background-color : #c9c5c5 ;
--fx-border-width: 0 0 0 2;
--fx-border-color: #000;
-}
-
-.bt-menu:pressed {
--fx-background-color :  #c9c5c5 ;
--fx-background-radius :  30 0 0 30;
-}
-
-.menu-bar {
-    -fx-background-color:#fff;
-}
-
-.menu .label {
-    -fx-text-fill: #000;
-}
-
-.menu:hover, .menu:showing {
-    -fx-background-color: #1f1f2b;
-}
-
-.menu:hover .label {
-    -fx-text-fill: #000;
-}
-
-.menu-item {
     -fx-background-color: #fff;
 }
 
-.menu-item .label {
+.fundo2 {
+    -fx-background-color: #c9c5c5;
+}
+
+.bt-menu {
+    -fx-background-color: #fff;
+    -fx-background-radius: 0;
     -fx-text-fill: #000;
 }
 
-.menu-item:hover {
-    -fx-background-color: #fafafa;
+.bt-menu:hover {
+    -fx-background-color: #c9c5c5 ;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: #000;
 }
 
-.menu-item:hover .label {
-    -fx-text-fill: #000000;
+.bt-menu:pressed {
+    -fx-background-color: #c9c5c5
 }
 
-.radio {
-    -jfx-selected-color: #0e73e5;
-}
-
-.texto-claro {
-    -fx-text-fill: #000;
-}
-
-.texto-escuro {
-    -fx-text-fill: #fff;
-}
-
-.bt-eliminar {
-        -fx-background-radius: 15px;
-        -fx-text-fill: #000;
-        -fx-border-color: #000;
-        -fx-border-width: 2px;
-        -fx-border-radius: 15px
-}
-
-.bt-eliminar:hover {
-    -fx-background-color: red;
-    -fx-background-radius: 15px;
-    -fx-text-fill: #000;
-    -fx-border-color: red;
-    -fx-border-radius: 15px
-}
-
-.rb-modo:selected {
+.texto {
     -fx-text-fill: #000;
 }
 
@@ -184,4 +33,14 @@
 
 .scroll-pane {
     -fx-background-color: transparent
+}
+
+.bt-pesquisa {
+    -jfx-unfocus-color: #000;
+    -fx-text-fill: #000;
+}
+
+.item {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #000
 }

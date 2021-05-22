@@ -3,7 +3,7 @@ package com.tecnoheli.hvendas.modelos;
 public enum Sexo {
 
     Masculino("M"),
-    Feminino("M");
+    Feminino("F");
 
     private final String s;
 

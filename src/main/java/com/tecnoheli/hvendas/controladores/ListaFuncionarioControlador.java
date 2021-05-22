@@ -7,7 +7,15 @@ package com.tecnoheli.hvendas.controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXRadioButton;
+import com.jfoenix.controls.JFXTextField;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 
 /**
  * FXML Controller class
@@ -15,6 +23,27 @@ import javafx.fxml.Initializable;
  * @author Dumilde Paulo
  */
 public class ListaFuncionarioControlador implements Initializable {
+
+    @FXML // fx:id="tfPesquisa"
+    private JFXTextField tfPesquisa; // Value injected by FXMLLoader
+
+    @FXML // fx:id="rbFuncao"
+    private JFXRadioButton rbFuncao; // Value injected by FXMLLoader
+
+    @FXML // fx:id="OpcaoPesquisa"
+    private ToggleGroup OpcaoPesquisa; // Value injected by FXMLLoader
+
+    @FXML // fx:id="rbNome"
+    private JFXRadioButton rbNome; // Value injected by FXMLLoader
+
+    @FXML // fx:id="btAdFuncionario"
+    private JFXButton btAdFuncionario; // Value injected by FXMLLoader
+
+    @FXML // fx:id="apContainer"
+    private AnchorPane apContainer; // Value injected by FXMLLoader
+
+    @FXML // fx:id="gpCabecalho"
+    private GridPane gpCabecalho; // Value injected by FXMLLoader
 
     /**
      * Initializes the controller class.

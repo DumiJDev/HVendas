@@ -4,15 +4,18 @@
       <w>abrir</w>
       <w>adiciona</w>
       <w>adicionando</w>
+      <w>alerta</w>
       <w>alterar</w>
       <w>altura</w>
       <w>apagar</w>
+      <w>aperte</w>
       <w>ativa</w>
       <w>ativo</w>
       <w>atualiza</w>
       <w>aumenta</w>
       <w>barra</w>
       <w>botao</w>
+      <w>cabecalho</w>
       <w>cadastrar</w>
       <w>cadastro</w>
       <w>caixa</w>
@@ -22,6 +25,7 @@
       <w>carrinho</w>
       <w>cenario</w>
       <w>claro</w>
+      <w>classe</w>
       <w>cliente</w>
       <w>clientes</w>
       <w>codigo</w>
@@ -30,15 +34,20 @@
       <w>comprar</w>
       <w>compras</w>
       <w>conteiner</w>
+      <w>contendo</w>
       <w>conteudo</w>
       <w>controlador</w>
       <w>controladores</w>
+      <w>dados</w>
+      <w>dange</w>
       <w>definindo</w>
       <w>deleta</w>
       <w>detalhes</w>
       <w>digite</w>
       <w>diminui</w>
+      <w>dumildes</w>
       <w>eliminar</w>
+      <w>erro</w>
       <w>escolha</w>
       <w>escolhido</w>
       <w>escuro</w>
@@ -49,7 +58,9 @@
       <w>estoque</w>
       <w>estudio</w>
       <w>excluir</w>
+      <w>fafafa</w>
       <w>feminino</w>
+      <w>ffad</w>
       <w>ffffff</w>
       <w>fornecedor</w>
       <w>fornecedores</w>
@@ -80,6 +91,7 @@
       <w>numero</w>
       <w>opcao</w>
       <w>palavra</w>
+      <w>pelo</w>
       <w>pesquisa</w>
       <w>preco</w>
       <w>produto</w>
@@ -89,9 +101,13 @@
       <w>residencia</w>
       <w>residência</w>
       <w>resultado</w>
+      <w>sair</w>
       <w>salario</w>
+      <w>secundaria</w>
+      <w>secundario</w>
       <w>sexo</w>
       <w>sistema</w>
+      <w>sobrenome</w>
       <w>sucesso</w>
       <w>tamanho</w>
       <w>tecnoheli</w>
@@ -99,9 +115,13 @@
       <w>telas</w>
       <w>telefone</w>
       <w>tema</w>
+      <w>tentativa</w>
+      <w>texto</w>
       <w>tipo</w>
       <w>titulo</w>
+      <w>troca</w>
       <w>título</w>
+      <w>unfocus</w>
       <w>usuario</w>
       <w>variáveis</w>
       <w>venda</w>

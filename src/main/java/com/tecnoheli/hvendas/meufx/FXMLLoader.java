@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.IntStream;
 
 public final class FXMLLoader {
 
@@ -48,7 +49,7 @@ public final class FXMLLoader {
 
 
     public FXMLLoader() {
-        final String[] lista = new String[]{
+        final var lista = new String[]{
                 "/fxml/listaCliente.fxml",
                 "/fxml/listaCompra.fxml",
                 "/fxml/listaProduto.fxml",
@@ -57,7 +58,7 @@ public final class FXMLLoader {
                 "/fxml/listaVenda.fxml"
         };
 
-        final String[] cadastro = new String[]{
+        final var cadastro = new String[]{
                 "/fxml/cadastroCliente.fxml",
                 "/fxml/cadastroCompra.fxml",
                 "/fxml/cadastroProduto.fxml",
@@ -66,7 +67,7 @@ public final class FXMLLoader {
                 "/fxml/cadastroVenda.fxml"
         };
 
-        final String[] detalhes = new String[]{
+        final var detalhes = new String[]{
                 "/fxml/detalhesCliente.fxml",
                 "/fxml/detalhesCompra.fxml",
                 "/fxml/detalhesProduto.fxml",
@@ -79,11 +80,11 @@ public final class FXMLLoader {
         telasCadastrar = new HashMap<>();
         telasDetalhes = new HashMap<>();
 
-        for (int indice = 0; indice < lista.length; indice++) {
+        IntStream.range(0, lista.length).forEach(indice -> {
             telasListar.put(indice + 1, carrega(lista[indice]));
             telasCadastrar.put(indice + 1, carrega(cadastro[indice]));
             telasDetalhes.put(indice + 1, carrega(detalhes[indice]));
-        }
+        });
     }
 
     public Parent carrega(String fxml) {
@@ -91,7 +92,7 @@ public final class FXMLLoader {
         try {
             parent = javafx.fxml.FXMLLoader.load(getClass().getResource(fxml));
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
         return parent;
