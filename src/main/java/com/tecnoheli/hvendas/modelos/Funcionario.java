@@ -19,9 +19,9 @@ public class Funcionario implements Serializable {
     private Double salario;
 
     private BI bi;
-    private List<Venda> vendas;
-    private List<Compra> compras;
     private Usuario usuario;
+    private List<Compra> compras;
+    private List<Venda> vendas;
 
     public long getCodigo() {
         return codigo;

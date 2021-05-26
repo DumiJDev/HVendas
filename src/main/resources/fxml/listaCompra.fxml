@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.ScrollPane?>
@@ -29,15 +28,14 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXRadioButton>
-            <JFXButton fx:id="btAdCompra" layoutX="40.0" layoutY="12.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 6; -fx-border-radius: 6;" styleClass="bt-login" stylesheets="@../assets/css/global.css" text="Abrir Painel de Compra" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="12.0" />
          </children>
       </AnchorPane>
-      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="275.0" layoutY="157.0" pannable="true" prefHeight="200.0" prefWidth="200.0" stylesheets="@../assets/css/global-escuro.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="275.0" layoutY="157.0" pannable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #0e73e5; -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@../assets/css/global-escuro.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
          <content>
             <AnchorPane fx:id="apContainer" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
          </content>
       </ScrollPane>
-      <GridPane fx:id="gpCabecalho" alignment="CENTER" layoutX="258.0" layoutY="65.0" minHeight="-Infinity" prefHeight="39.0" prefWidth="750.0" style="-fx-border-color: #0e73e5; -fx-border-width: 0 0 1 0;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="55.0">
+      <GridPane fx:id="gpCabecalho" alignment="CENTER" layoutX="258.0" layoutY="65.0" minHeight="-Infinity" prefHeight="39.0" prefWidth="750.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="55.0">
          <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          </columnConstraints>

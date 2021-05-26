@@ -1,9 +1,10 @@
 package com.tecnoheli.hvendas.modelos;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class BI {
+public class BI implements Serializable {
 
     private String numero;
     private String nome;

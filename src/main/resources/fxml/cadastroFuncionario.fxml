@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroFuncionarioControlador">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="383.0" prefWidth="379.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroFuncionarioControlador">
+   <children>
+      <VBox alignment="CENTER" layoutX="135.0" layoutY="100.0" prefHeight="200.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfUsername" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="328.0" promptText="Username" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfNomeFuncionario" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="328.0" promptText="Nome" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfNomePai" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="328.0" promptText="Nome do Pai" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfNomeMae" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="328.0" promptText="Nome da Mãe" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfResidencia" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="238.0" promptText="Residência" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+                  <JFXComboBox fx:id="cbSexo" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="81.0" promptText="Sexo" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfNBI" focusColor="#0e73e5" labelFloat="true" prefHeight="30.0" prefWidth="144.0" promptText="Nº BI" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+                  <DatePicker fx:id="dpDataNascimento" prefHeight="31.0" prefWidth="174.0" promptText="Data de Nascimento" style="-fx-background-color: transparent;" styleClass="texto-sucesso" stylesheets="@../assets/css/global.css" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXComboBox fx:id="cbCargo" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="320.0" promptText="Cargo" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="195.0" prefHeight="49.0" prefWidth="600.0" spacing="80.0">
+               <children>
+                  <JFXButton fx:id="btAd" buttonType="RAISED" focusTraversable="false" prefHeight="27.0" prefWidth="119.0" styleClass="bt-sucesso" stylesheets="@../assets/css/global.css" text="Adicionar" />
+                  <JFXButton fx:id="btCancelar" buttonType="RAISED" focusTraversable="false" layoutX="251.0" layoutY="21.0" prefHeight="27.0" prefWidth="119.0" styleClass="bt-eliminar" stylesheets="@../assets/css/global.css" text="Cancelar" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

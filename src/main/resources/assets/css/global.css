@@ -87,8 +87,8 @@
 
 .bt-eliminar {
     -fx-background-radius: 15px;
-    -fx-text-fill: #fff;
-    -fx-border-color: #fff;
+    -fx-text-fill: red;
+    -fx-border-color: red;
     -fx-border-width: 2px;
     -fx-border-radius: 15px
 }
@@ -112,4 +112,116 @@
 .bt-login:hover {
     -fx-background-color: #0e73e5;
     -fx-text-fill: #fff;
+}
+
+.texto-principal {
+    -fx-prompt-text-fill: #0e73e5;
+    -fx-text-fill: #0e73e5
+}
+
+.texto-sucesso {
+    -fx-text-fill: #33ff33
+}
+
+.texto-erro {
+    -fx-text-fill: #ed1d0d
+}
+
+.texto-alerta {
+    -fx-text-fill: #ffad00
+}
+
+.texto-info {
+    -fx-text-fill: #42ade5
+}
+
+.bt-ad-prod {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #0e73e5;
+    -fx-text-fill: #0e73e5;
+}
+
+.bt-at-prod {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #42ade5;
+    -fx-text-fill: #42ade5;
+}
+
+.bt-lp-prod {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #ffad00;
+    -fx-text-fill: #ffad00;
+}
+
+.bt-el-prod {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #ed1d0d;
+    -fx-text-fill: #ed1d0d;
+}
+
+.bt-ad-prod:hover {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: #fff;
+    -fx-background-color: #0e73e5;
+}
+
+.bt-at-prod:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #42ade5;
+}
+
+.bt-lp-prod:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #ffad00;
+}
+
+.bt-el-prod:hover {
+    -fx-text-fill: #000;
+    -fx-background-color: #ed1d0d;
+}
+
+.column-header {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #0e73e5;
+    -fx-background-color: transparent
+}
+
+.column-header .label {
+    -fx-text-fill: #0e73e5
+}
+
+.column-header-background {
+    -fx-background-color: transparent
+}
+
+.table-view {
+    -fx-background-color: transparent
+}
+
+.table-view .row-selection {
+    -fx-text-fill: #000;
+    -fx-background-color: #fafafa
+}
+
+.table-view .row-selection:selected {
+    -fx-text-fill: #fff;
+    -fx-background-color: #0e73e5
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent
+}
+
+
+.date-picker .text-field {
+    -fx-prompt-text-fill: #0e73e5;
+    -fx-text-fill: #0e73e5;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #0e73e5;
+    -fx-background-color: transparent
 }

@@ -1,9 +1,8 @@
 package com.tecnoheli.hvendas.util;
 
+import java.time.LocalTime;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
-
-import java.time.LocalTime;
 
 public class UpdateService extends Service<Void> {
 
@@ -11,7 +10,7 @@ public class UpdateService extends Service<Void> {
 
     @Override
     protected Task<Void> createTask() {
-        return new Task<>() {
+        return new Task<Void>() {
             @Override
             protected Void call() throws Exception {
                 while (true) {

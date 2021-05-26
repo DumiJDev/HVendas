@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroFornecedorControlador">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="408.0" prefWidth="367.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroFornecedorControlador">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="135.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfNomeFornecedor" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="328.0" promptText="Nome do fornecedor" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="170.0" prefHeight="49.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tfNIF" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" prefHeight="25.0" prefWidth="328.0" promptText="NIF" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <JFXComboBox fx:id="cbProdutos" editable="true" focusColor="#0e73e5" labelFloat="true" prefHeight="25.0" prefWidth="324.0" promptText="Produtos fornecidos" unFocusColor="WHITE" />
+               </children>
+            </HBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="200.0" prefWidth="334.0" style="-fx-background-radius: 10;" stylesheets="@../assets/css/global.css" vbarPolicy="NEVER">
+              <content>
+                <AnchorPane fx:id="apProdutos" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-background-radius: 10;" />
+              </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="195.0" prefHeight="49.0" prefWidth="600.0" spacing="80.0">
+               <children>
+                  <JFXButton buttonType="RAISED" focusTraversable="false" prefHeight="27.0" prefWidth="119.0" styleClass="bt-sucesso" stylesheets="@../assets/css/global.css" text="Adicionar" />
+                  <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="251.0" layoutY="21.0" prefHeight="27.0" prefWidth="119.0" styleClass="bt-eliminar" stylesheets="@../assets/css/global.css" text="Cancelar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

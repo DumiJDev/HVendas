@@ -4,6 +4,7 @@
       <w>abrir</w>
       <w>adiciona</w>
       <w>adicionando</w>
+      <w>adicionar</w>
       <w>alerta</w>
       <w>alterar</w>
       <w>altura</w>
@@ -14,12 +15,14 @@
       <w>atualiza</w>
       <w>aumenta</w>
       <w>barra</w>
+      <w>bolacha</w>
       <w>botao</w>
       <w>cabecalho</w>
       <w>cadastrar</w>
       <w>cadastro</w>
       <w>caixa</w>
       <w>caminho</w>
+      <w>cancelar</w>
       <w>carrega</w>
       <w>carregando</w>
       <w>carrinho</w>
@@ -33,11 +36,14 @@
       <w>compra</w>
       <w>comprar</w>
       <w>compras</w>
+      <w>concluido</w>
+      <w>configura</w>
       <w>conteiner</w>
       <w>contendo</w>
       <w>conteudo</w>
       <w>controlador</w>
       <w>controladores</w>
+      <w>controlo</w>
       <w>dados</w>
       <w>dange</w>
       <w>definindo</w>
@@ -57,19 +63,24 @@
       <w>estilo</w>
       <w>estoque</w>
       <w>estudio</w>
+      <w>etiquetas</w>
       <w>excluir</w>
       <w>fafafa</w>
       <w>feminino</w>
       <w>ffad</w>
       <w>ffffff</w>
+      <w>fonte</w>
       <w>fornecedor</w>
       <w>fornecedores</w>
       <w>funcao</w>
       <w>funcionario</w>
       <w>funcionarios</w>
+      <w>funcionário</w>
       <w>fundo</w>
+      <w>função</w>
       <w>gerente</w>
       <w>gestão</w>
+      <w>historico</w>
       <w>hvendas</w>
       <w>hvidao</w>
       <w>imagens</w>
@@ -94,6 +105,7 @@
       <w>pelo</w>
       <w>pesquisa</w>
       <w>preco</w>
+      <w>preço</w>
       <w>produto</w>
       <w>produtos</w>
       <w>quantidade</w>
@@ -116,6 +128,7 @@
       <w>telefone</w>
       <w>tema</w>
       <w>tentativa</w>
+      <w>terceiro</w>
       <w>texto</w>
       <w>tipo</w>
       <w>titulo</w>

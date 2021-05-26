@@ -30,12 +30,12 @@
             </JFXRadioButton>
          </children>
       </AnchorPane>
-      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="275.0" layoutY="83.0" pannable="true" prefHeight="420.0" prefWidth="730.0" stylesheets="@../assets/css/global-escuro.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="275.0" layoutY="83.0" pannable="true" prefHeight="420.0" prefWidth="730.0" style="-fx-border-color: #0e73e5; -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@../assets/css/global-escuro.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
          <content>
             <AnchorPane fx:id="apContainer" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
          </content>
       </ScrollPane>
-      <GridPane fx:id="gpCabecalho" alignment="CENTER" layoutX="258.0" layoutY="65.0" minHeight="-Infinity" prefHeight="39.0" prefWidth="750.0" style="-fx-border-color: #0e73e5; -fx-border-width: 0 0 1 0;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="55.0">
+      <GridPane fx:id="gpCabecalho" alignment="CENTER" layoutX="258.0" layoutY="65.0" minHeight="-Infinity" prefHeight="39.0" prefWidth="750.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="55.0">
          <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          </columnConstraints>

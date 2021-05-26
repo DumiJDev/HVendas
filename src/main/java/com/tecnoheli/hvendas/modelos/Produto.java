@@ -63,10 +63,8 @@ public class Produto implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (o instanceof Produto) {
-            Produto p = (Produto) o;
-            return p.getCodigo() == this.getCodigo();
-        }
+        if (o instanceof Produto)
+            return ((Produto) o).getCodigo() == this.getCodigo();
         return false;
     }
 }

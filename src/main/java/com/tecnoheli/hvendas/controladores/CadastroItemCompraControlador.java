@@ -7,6 +7,12 @@ package com.tecnoheli.hvendas.controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXTextField;
+import com.tecnoheli.hvendas.modelos.property.ProdutoProperty;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**

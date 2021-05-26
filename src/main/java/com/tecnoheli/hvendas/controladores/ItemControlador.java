@@ -11,6 +11,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Font;
 
 import java.net.URL;
 import java.util.Arrays;
@@ -29,32 +30,58 @@ public class ItemControlador implements Initializable {
     private JFXButton btDel; // Value injected by FXMLLoader
 
     //Minhas Variáveis
-    private static int nTotalItem = 0;
     private static Label[] labels;
-    private int nItem;
-
-    public static void setLabels(Label[] labels) {
-        ItemControlador.labels = labels;
-    }
+    private static ItemTipo tipo;
+    private ItemTipo itemTipo;
+    //Controlo do ID
+    private static String idString;
+    private static long idLong;
 
     @FXML
     void click(ActionEvent event) {
         if (event.getSource() == btDel) {
-            ItemControlador.nTotalItem--;
-            ListaClienteControlador.deleta(this.nItem);
+            /**switch (itemTipo) {
+                case Cliente:
+                    ListaClienteControlador.deleta(idString);
+                    break;
+                case Compra:
+                    break;
+                case Fornecedor:
+                    break;
+                case Funcionario:
+                    break;
+                case Produto:
+                    break;
+                case Venda:
+                    break;
+             }
+             */
         } else if (event.getSource() == btVista) {
-            System.out.println(btVista);
+            /**switch (itemTipo) {
+                case Cliente:
+                    break;
+                case Compra:
+                    break;
+                case Fornecedor:
+                    break;
+                case Funcionario:
+                    break;
+                case Produto:
+                    break;
+                case Venda:
+                    break;
+            }*/
         }
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        this.nItem = ItemControlador.nTotalItem++;
-
+        itemTipo = tipo;
+        configuraLabel(labels);
         adicionaElementos(labels);
     }
 
-    private void adicionaElementos(Label[] lbs){
+    private void adicionaElementos(Label...lbs){
         gpContainer.getChildren().clear();
         gpContainer.getColumnConstraints().clear();
 
@@ -66,5 +93,26 @@ public class ItemControlador implements Initializable {
             gpContainer.getColumnConstraints().add(c);
 
         gpContainer.addRow(0, lbs);
+    }
+
+    private void configuraLabel(Label...lbs){
+        final String estilo = "-fx-text-fill: #0e73e5;";
+        final Font fonte = Font.font("System Bold", 14);
+        Arrays.stream(lbs).forEach(label -> {
+            label.setStyle(estilo);
+            label.setFont(fonte);
+        });
+    }
+
+    public static void setLabels(Label[] labels) {
+        ItemControlador.labels = labels;
+    }
+
+    public static void setIdString(String idString) {
+        ItemControlador.idString = idString;
+    }
+
+    public static void setIdLong(long idLong) {
+        ItemControlador.idLong = idLong;
     }
 }
