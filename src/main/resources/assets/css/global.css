@@ -213,15 +213,12 @@
     -fx-background-color: #0e73e5
 }
 
-.date-picker .arrow-button {
-    -fx-background-color: transparent
-}
-
-
 .date-picker .text-field {
     -fx-prompt-text-fill: #0e73e5;
     -fx-text-fill: #0e73e5;
-    -fx-border-width: 0 0 1 0;
-    -fx-border-color: #0e73e5;
-    -fx-background-color: transparent
+}
+
+.combo-box .text-field {
+    -fx-prompt-text-fill: #0e73e5;
+    -fx-text-fill: #0e73e5;
 }

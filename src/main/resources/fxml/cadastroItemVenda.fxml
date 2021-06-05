@@ -4,34 +4,43 @@
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-
-<AnchorPane id="AnchorPane" prefHeight="49.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroItemVendaControlador">
-   <children>
-      <HBox alignment="CENTER" layoutX="-31.0" layoutY="-25.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <JFXComboBox fx:id="cbProduto" editable="true" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" prefHeight="25.0" prefWidth="174.0" promptText="Produto" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-            </JFXComboBox>
-            <JFXTextField fx:id="tfQtd" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" prefHeight="25.0" prefWidth="53.0" promptText="Qtd" styleClass="texto-principal" stylesheets="@../assets/css/global.css" text="1" unFocusColor="WHITE">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-            </JFXTextField>
-            <JFXButton fx:id="btOk" buttonType="RAISED" focusTraversable="false" prefHeight="25.0" prefWidth="100.0" styleClass="bt-sucesso" stylesheets="@../assets/css/global.css" text="Ok">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-            </JFXButton>
-            <JFXButton fx:id="btCancelar" buttonType="RAISED" focusTraversable="false" prefHeight="25.0" prefWidth="100.0" styleClass="bt-eliminar" stylesheets="@../assets/css/global.css" text="Cancelar">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-            </JFXButton>
-         </children>
-      </HBox>
-   </children>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="49.0" prefWidth="451.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.tecnoheli.hvendas.controllers.CadastroItemVendaControlador">
+    <children>
+        <HBox alignment="CENTER" layoutX="-31.0" layoutY="-25.0" prefHeight="100.0" prefWidth="200.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <JFXComboBox fx:id="cbProduto" editable="true" focusColor="#0e73e5" focusTraversable="false"
+                             labelFloat="true" prefHeight="25.0" prefWidth="174.0" promptText="Produto"
+                             styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0"/>
+                    </HBox.margin>
+                </JFXComboBox>
+                <JFXTextField fx:id="tfQtd" focusColor="#0e73e5" focusTraversable="false" labelFloat="true"
+                              prefHeight="25.0" prefWidth="53.0" promptText="Qtd" styleClass="texto-principal"
+                              stylesheets="@../assets/css/global.css" text="1" unFocusColor="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0"/>
+                    </HBox.margin>
+                </JFXTextField>
+                <JFXButton fx:id="btOk" buttonType="RAISED" focusTraversable="false" prefHeight="25.0" prefWidth="100.0"
+                           styleClass="bt-sucesso" stylesheets="@../assets/css/global.css" text="Ok">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0"/>
+                    </HBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="btCancelar" buttonType="RAISED" focusTraversable="false" prefHeight="25.0"
+                           prefWidth="100.0" styleClass="bt-eliminar" stylesheets="@../assets/css/global.css"
+                           text="Cancelar">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0"/>
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+        </HBox>
+    </children>
 </AnchorPane>

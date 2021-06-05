@@ -1,7 +1,11 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Dumilde Paulo">
     <words>
+      <w>aberto</w>
+      <w>abre</w>
       <w>abrir</w>
+      <w>acao</w>
+      <w>acesso</w>
       <w>adiciona</w>
       <w>adicionando</w>
       <w>adicionar</w>
@@ -14,6 +18,7 @@
       <w>ativo</w>
       <w>atualiza</w>
       <w>aumenta</w>
+      <w>aviso</w>
       <w>barra</w>
       <w>bolacha</w>
       <w>botao</w>
@@ -27,6 +32,7 @@
       <w>carregando</w>
       <w>carrinho</w>
       <w>cenario</w>
+      <w>chave</w>
       <w>claro</w>
       <w>classe</w>
       <w>cliente</w>
@@ -37,39 +43,54 @@
       <w>comprar</w>
       <w>compras</w>
       <w>concluido</w>
+      <w>conexao</w>
       <w>configura</w>
+      <w>confirma</w>
+      <w>conta</w>
       <w>conteiner</w>
+      <w>contem</w>
       <w>contendo</w>
       <w>conteudo</w>
       <w>controlador</w>
       <w>controladores</w>
       <w>controlo</w>
+      <w>converte</w>
       <w>dados</w>
       <w>dange</w>
       <w>definindo</w>
       <w>deleta</w>
+      <w>deletou</w>
       <w>detalhes</w>
       <w>digite</w>
       <w>diminui</w>
       <w>dumildes</w>
       <w>eliminar</w>
+      <w>entidade</w>
       <w>erro</w>
       <w>escolha</w>
+      <w>escolhe</w>
       <w>escolhido</w>
       <w>escuro</w>
       <w>espaco</w>
+      <w>espera</w>
       <w>esqueceu</w>
       <w>estado</w>
       <w>estilo</w>
       <w>estoque</w>
       <w>estudio</w>
+      <w>está</w>
       <w>etiquetas</w>
       <w>excluir</w>
+      <w>existe</w>
+      <w>fabrica</w>
       <w>fafafa</w>
+      <w>falta</w>
+      <w>fecha</w>
       <w>feminino</w>
       <w>ffad</w>
       <w>ffffff</w>
       <w>fonte</w>
+      <w>forn</w>
       <w>fornecedor</w>
       <w>fornecedores</w>
       <w>funcao</w>
@@ -80,43 +101,71 @@
       <w>função</w>
       <w>gerente</w>
       <w>gestão</w>
+      <w>gravados</w>
       <w>historico</w>
       <w>hvendas</w>
       <w>hvidao</w>
       <w>imagens</w>
       <w>importando</w>
       <w>indice</w>
+      <w>inesperado</w>
+      <w>informacao</w>
       <w>inicial</w>
+      <w>inserido</w>
       <w>inserir</w>
+      <w>invalido</w>
+      <w>inválida</w>
+      <w>iten</w>
       <w>itens</w>
+      <w>jfxs</w>
       <w>largura</w>
+      <w>liberado</w>
       <w>lista</w>
       <w>listar</w>
+      <w>logado</w>
       <w>manter</w>
       <w>masculino</w>
+      <w>mensagem</w>
       <w>minhas</w>
+      <w>modelos</w>
       <w>modo</w>
+      <w>mostram</w>
       <w>muda</w>
+      <w>método</w>
       <w>nascimento</w>
+      <w>noturno</w>
       <w>novo</w>
+      <w>novos</w>
       <w>numero</w>
+      <w>objeto</w>
       <w>opcao</w>
       <w>palavra</w>
+      <w>pela</w>
       <w>pelo</w>
+      <w>persiste</w>
+      <w>persistido</w>
       <w>pesquisa</w>
+      <w>pessoais</w>
       <w>preco</w>
+      <w>preenchendo</w>
       <w>preço</w>
       <w>produto</w>
       <w>produtos</w>
       <w>quantidade</w>
+      <w>realizada</w>
       <w>recuperar</w>
+      <w>relação</w>
       <w>residencia</w>
       <w>residência</w>
       <w>resultado</w>
+      <w>retirar</w>
+      <w>retorno</w>
       <w>sair</w>
       <w>salario</w>
       <w>secundaria</w>
       <w>secundario</w>
+      <w>senha</w>
+      <w>serem</w>
       <w>sexo</w>
       <w>sistema</w>
       <w>sobrenome</w>
@@ -132,14 +181,20 @@
       <w>texto</w>
       <w>tipo</w>
       <w>titulo</w>
+      <w>transicao</w>
       <w>troca</w>
       <w>título</w>
+      <w>ultrapassado</w>
       <w>unfocus</w>
       <w>usuario</w>
+      <w>usuarios</w>
       <w>variáveis</w>
+      <w>vazio</w>
       <w>venda</w>
       <w>vendas</w>
       <w>vender</w>
+      <w>você</w>
+      <w>zerar</w>
     </words>
   </dictionary>
 </component>

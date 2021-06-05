@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.tecnoheli.hvendas.controllers.TelaDeEsperaControlador">
+    <children>
+        <HBox fx:id="hbContainer" alignment="CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <JFXSpinner fx:id="jfxs" radius="10.0"/>
+                <Label fx:id="lbMensagem" text="Aguardando..." textFill="#0e73e5">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

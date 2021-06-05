@@ -1,52 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="577.0" style="-fx-border-color: #0e73e5; -fx-border-width: 0 0 1 0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.ItemControlador">
-   <children>
-      <GridPane fx:id="gpContainer" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="0.0">
-        <columnConstraints>
-          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-        </rowConstraints>
-      </GridPane>
-      <HBox alignment="CENTER" layoutX="533.0" layoutY="-28.0" prefHeight="100.0" prefWidth="100.0" spacing="10.0" style="-fx-border-color: #0e73e5; -fx-border-width: 0 0 0 1;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <JFXButton fx:id="btVista" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#click" prefHeight="35.0" prefWidth="35.0" ripplerFill="#0e73e5" style="-fx-border-color: #0e73e5; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;" text="Ver" textFill="#0e73e5">
-               <font>
-                  <Font size="11.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(/assets/imagens/vista.png);" />
-               </graphic>
-            </JFXButton>
-            <JFXButton fx:id="btDel" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#click" prefHeight="35.0" prefWidth="35.0" ripplerFill="RED" style="-fx-border-color: red; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;" text="X" textFill="RED">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(/assets/imagens/apaga-icone.png);" />
-               </graphic>
-            </JFXButton>
-         </children>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </HBox>
-   </children>
-   <stylesheets>
-      <URL value="@../assets/css/global.css" />
-      <URL value="@../assets/css/global-escuro.css" />
-   </stylesheets>
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="45.0" prefWidth="577.0"
+            style="-fx-border-color: #0e73e5; -fx-border-width: 0 0 1 0;" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.tecnoheli.hvendas.controllers.ItemControlador">
+    <children>
+        <GridPane fx:id="gpContainer" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="500.0"
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="105.0"
+                  AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+            </rowConstraints>
+        </GridPane>
+        <HBox alignment="CENTER" layoutX="533.0" layoutY="-28.0" prefHeight="100.0" prefWidth="100.0" spacing="10.0"
+              style="-fx-border-color: #0e73e5; -fx-border-width: 0 0 0 1;" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <JFXButton fx:id="btVista" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY"
+                           focusTraversable="false" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity"
+                           onAction="#click" prefHeight="35.0" prefWidth="35.0" ripplerFill="#0e73e5"
+                           style="-fx-border-color: #0e73e5; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;"
+                           text="Ver" textFill="#0e73e5">
+                    <font>
+                        <Font size="11.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true"
+                                   style="-fx-image: url(/assets/imagens/vista.png);"/>
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="btDel" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY"
+                           focusTraversable="false" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity"
+                           onAction="#click" prefHeight="35.0" prefWidth="35.0" ripplerFill="RED"
+                           style="-fx-border-color: red; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;"
+                           text="X" textFill="RED">
+                    <font>
+                        <Font name="System Bold" size="16.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true"
+                                   style="-fx-image: url(/assets/imagens/apaga-icone.png);"/>
+                    </graphic>
+                </JFXButton>
+            </children>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </HBox>
+    </children>
+    <stylesheets>
+        <URL value="@../assets/css/global.css"/>
+        <URL value="@../assets/css/global-escuro.css"/>
+    </stylesheets>
 </AnchorPane>

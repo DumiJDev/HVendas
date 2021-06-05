@@ -1,110 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXRadioButton?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import java.lang.String?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-
-<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="729.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroVendaControlador">
-   <children>
-      <TableView fx:id="tvProdutos" focusTraversable="false" layoutX="14.0" layoutY="94.0" prefHeight="358.0" prefWidth="509.0" stylesheets="@../assets/css/global.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="80.0">
-        <columns>
-          <TableColumn fx:id="cvNome" prefWidth="219.0" text="Nome do produto" />
-          <TableColumn fx:id="cvQuantidade" prefWidth="54.0" text="Qtd" />
-            <TableColumn fx:id="cbPreco" prefWidth="114.0" text="Preço" />
-            <TableColumn fx:id="ctTotal" prefWidth="121.0" text="Total" />
-        </columns>
-         <columnResizePolicy>
-            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-         </columnResizePolicy>
-      </TableView>
-      <AnchorPane prefHeight="58.0" prefWidth="729.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #0e73e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
-         <children>
-            <JFXRadioButton fx:id="rbCasa" focusTraversable="false" layoutX="14.0" layoutY="21.0" selected="true" stylesheets="@../assets/css/global.css" text="Da casa" AnchorPane.leftAnchor="14.0">
-               <toggleGroup>
-                  <ToggleGroup fx:id="tgCliente" />
-               </toggleGroup>
-               <styleClass>
-                  <String fx:value="radio" />
-                  <String fx:value="texto-principal" />
-               </styleClass>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </JFXRadioButton>
-            <JFXRadioButton fx:id="rbNovo" focusTraversable="false" layoutX="94.0" layoutY="21.0" stylesheets="@../assets/css/global.css" text="Novo" toggleGroup="$tgCliente" AnchorPane.leftAnchor="94.0">
-               <styleClass>
-                  <String fx:value="radio" />
-                  <String fx:value="texto-principal" />
-               </styleClass>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></JFXRadioButton>
-            <JFXComboBox fx:id="cbClientes" editable="true" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="556.0" layoutY="17.0" prefHeight="25.0" prefWidth="160.0" promptText="Procure aqui o cliente" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" AnchorPane.rightAnchor="10.0" />
-            <JFXTextField fx:id="tfNome" alignment="BASELINE_LEFT" disable="true" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="181.0" layoutY="17.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="160.0" promptText="Nome" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" AnchorPane.leftAnchor="189.0" />
-            <JFXTextField fx:id="tfTelefone" alignment="BASELINE_LEFT" disable="true" focusColor="#0e73e5" focusTraversable="false" labelFloat="true" layoutX="365.0" layoutY="17.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="160.0" promptText="Telefone" styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE" AnchorPane.leftAnchor="369.0" />
-         </children>
-      </AnchorPane>
-      <VBox alignment="CENTER" layoutX="530.0" layoutY="212.0" prefHeight="124.0" prefWidth="189.0" AnchorPane.bottomAnchor="125.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="212.0">
-         <children>
-            <JFXButton fx:id="btAdProd" alignment="BASELINE_CENTER" buttonType="RAISED" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="170.0" styleClass="bt-ad-prod" stylesheets="@../assets/css/global.css" text="Adicionar produto" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" top="5.0" />
-               </VBox.margin>
-            </JFXButton>
-            <JFXButton fx:id="btAtProd" alignment="BASELINE_CENTER" buttonType="RAISED" disable="true" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="170.0" styleClass="bt-at-prod" stylesheets="@../assets/css/global.css" text="Atualizar produto" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" />
-               </VBox.margin>
-            </JFXButton>
-            <JFXButton fx:id="btLimpLista" alignment="BASELINE_CENTER" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="20.0" layoutY="75.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="170.0" styleClass="bt-lp-prod" stylesheets="@../assets/css/global.css" text="Limpar Lista">
-               <VBox.margin>
-                  <Insets bottom="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btElProd" alignment="BASELINE_CENTER" buttonType="RAISED" disable="true" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="170.0" styleClass="bt-el-prod" stylesheets="@../assets/css/global.css" text="Eliminar produto" textFill="WHITE">
-               <VBox.margin>
-                  <Insets bottom="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </VBox>
-      <Label layoutX="600.0" layoutY="116.0" styleClass="texto-principal" stylesheets="@../assets/css/global.css" text="Total" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="116.0">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="lbTotal" alignment="BASELINE_CENTER" layoutX="575.0" layoutY="160.0" prefHeight="30.0" prefWidth="99.0" styleClass="texto-principal" stylesheets="@../assets/css/global.css" text="0,0 Akz" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="160.0" />
-      <JFXButton fx:id="btConcluido" buttonType="RAISED" focusTraversable="false" layoutX="530.0" layoutY="401.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="83.0" styleClass="cor-sucesso" stylesheets="@../assets/css/global.css" text="Concluir" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="116.0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="btCancelar" buttonType="RAISED" focusTraversable="false" layoutX="633.0" layoutY="401.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="83.0" styleClass="cor-erro" stylesheets="@../assets/css/global.css" text="Cancelar" textFill="WHITE" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="10.0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </JFXButton>
-   </children>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="462.0" prefWidth="729.0"
+            style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.tecnoheli.hvendas.controllers.CadastroVendaControlador">
+    <children>
+        <TableView fx:id="tvProdutos" focusTraversable="false" layoutX="14.0" layoutY="94.0" prefHeight="358.0"
+                   prefWidth="509.0" stylesheets="@../assets/css/global.css" AnchorPane.bottomAnchor="10.0"
+                   AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="80.0">
+            <columns>
+                <TableColumn fx:id="cvNome" prefWidth="219.0" text="Nome do produto"/>
+                <TableColumn fx:id="cvQuantidade" prefWidth="54.0" text="Qtd"/>
+                <TableColumn fx:id="cbPreco" prefWidth="114.0" text="Preço"/>
+                <TableColumn fx:id="ctTotal" prefWidth="121.0" text="Total"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <AnchorPane prefHeight="58.0" prefWidth="729.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #0e73e5;"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <JFXRadioButton fx:id="rbCasa" focusTraversable="false" layoutX="14.0" layoutY="21.0" selected="true"
+                                stylesheets="@../assets/css/global.css" text="Da casa" AnchorPane.leftAnchor="14.0">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="tgCliente"/>
+                    </toggleGroup>
+                    <styleClass>
+                        <String fx:value="radio"/>
+                        <String fx:value="texto-principal"/>
+                    </styleClass>
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </JFXRadioButton>
+                <JFXRadioButton fx:id="rbNovo" focusTraversable="false" layoutX="94.0" layoutY="21.0"
+                                stylesheets="@../assets/css/global.css" text="Novo" toggleGroup="$tgCliente"
+                                AnchorPane.leftAnchor="94.0">
+                    <styleClass>
+                        <String fx:value="radio"/>
+                        <String fx:value="texto-principal"/>
+                    </styleClass>
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </JFXRadioButton>
+                <JFXComboBox fx:id="cbClientes" editable="true" focusColor="#0e73e5" focusTraversable="false"
+                             labelFloat="true" layoutX="556.0" layoutY="17.0" prefHeight="25.0" prefWidth="160.0"
+                             promptText="Procure aqui o cliente" styleClass="texto-principal"
+                             stylesheets="@../assets/css/global.css" unFocusColor="WHITE"
+                             AnchorPane.rightAnchor="10.0"/>
+                <JFXTextField fx:id="tfNome" alignment="BASELINE_LEFT" disable="true" focusColor="#0e73e5"
+                              focusTraversable="false" labelFloat="true" layoutX="181.0" layoutY="17.0"
+                              minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="160.0"
+                              promptText="Nome" styleClass="texto-principal" stylesheets="@../assets/css/global.css"
+                              unFocusColor="WHITE" AnchorPane.leftAnchor="189.0"/>
+                <JFXTextField fx:id="tfTelefone" alignment="BASELINE_LEFT" disable="true" focusColor="#0e73e5"
+                              focusTraversable="false" labelFloat="true" layoutX="365.0" layoutY="17.0"
+                              minHeight="-Infinity" prefHeight="25.0" prefWidth="160.0" promptText="Telefone"
+                              styleClass="texto-principal" stylesheets="@../assets/css/global.css" unFocusColor="WHITE"
+                              AnchorPane.leftAnchor="369.0"/>
+            </children>
+        </AnchorPane>
+        <VBox alignment="CENTER" layoutX="530.0" layoutY="212.0" prefHeight="124.0" prefWidth="189.0"
+              AnchorPane.bottomAnchor="125.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="212.0">
+            <children>
+                <JFXButton fx:id="btAdProd" alignment="BASELINE_CENTER" buttonType="RAISED" focusTraversable="false"
+                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="170.0"
+                           styleClass="bt-ad-prod" stylesheets="@../assets/css/global.css" text="Adicionar produto"
+                           textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0"/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="btAtProd" alignment="BASELINE_CENTER" buttonType="RAISED" disable="true"
+                           focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0"
+                           prefWidth="170.0" styleClass="bt-at-prod" stylesheets="@../assets/css/global.css"
+                           text="Atualizar produto" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0"/>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="btLimpLista" alignment="BASELINE_CENTER" buttonType="RAISED" disable="true"
+                           focusTraversable="false" layoutX="20.0" layoutY="75.0" minHeight="-Infinity"
+                           minWidth="-Infinity" prefHeight="25.0" prefWidth="170.0" styleClass="bt-lp-prod"
+                           stylesheets="@../assets/css/global.css" text="Limpar Lista">
+                    <VBox.margin>
+                        <Insets bottom="5.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="btElProd" alignment="BASELINE_CENTER" buttonType="RAISED" disable="true"
+                           focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0"
+                           prefWidth="170.0" styleClass="bt-el-prod" stylesheets="@../assets/css/global.css"
+                           text="Eliminar produto" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets bottom="5.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </JFXButton>
+            </children>
+        </VBox>
+        <Label layoutX="600.0" layoutY="116.0" styleClass="texto-principal" stylesheets="@../assets/css/global.css"
+               text="Total" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="116.0">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbTotal" alignment="BASELINE_CENTER" layoutX="575.0" layoutY="160.0" prefHeight="30.0"
+               prefWidth="99.0" styleClass="texto-principal" stylesheets="@../assets/css/global.css" text="0,0 Akz"
+               AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="160.0"/>
+        <JFXButton fx:id="btConcluido" buttonType="RAISED" focusTraversable="false" layoutX="530.0" layoutY="401.0"
+                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="83.0"
+                   styleClass="cor-sucesso" stylesheets="@../assets/css/global.css" text="Concluir"
+                   AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="116.0">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btCancelar" buttonType="RAISED" focusTraversable="false" layoutX="633.0" layoutY="401.0"
+                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="83.0" styleClass="cor-erro"
+                   stylesheets="@../assets/css/global.css" text="Cancelar" textFill="WHITE"
+                   AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="10.0">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </JFXButton>
+    </children>
 </AnchorPane>

@@ -2,9 +2,12 @@
 
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-
-<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="708.0" styleClass="fundo-preto" stylesheets="@../assets/css/global-escuro.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecnoheli.hvendas.controladores.CadastroClienteControlador">
-   <children>
-      <VBox alignment="CENTER" layoutX="304.0" layoutY="111.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="421.0" prefWidth="708.0"
+            styleClass="fundo-preto" stylesheets="@../assets/css/global-escuro.css"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.tecnoheli.hvendas.controllers.CadastroClienteController">
+    <children>
+        <VBox alignment="CENTER" layoutX="304.0" layoutY="111.0" prefHeight="200.0" prefWidth="100.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+    </children>
 </AnchorPane>
